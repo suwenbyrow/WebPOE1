@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Standards-compliant HTML setup -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Part 1: Website Foundation</title>
+    <!-- 
+      Using Tailwind CSS for modern, mobile-first styling.
+      This script tag makes all Tailwind utility classes available for use.
+    -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Using a professional, legible font for the entire page. */
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      /* Custom styles to enhance the visual appeal of the page. */
+      .container {
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 2rem 1rem;
+      }
+      .card {
+        background-color: #ffffff;
+        border-radius: 1rem;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        padding: 2rem;
+        transition: transform 0.3s ease;
+      }
+      .card:hover {
+        transform: translateY(-5px);
+      }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- 
+      Website Header: This section represents the top part of the page, 
+      typically containing the site logo and primary navigation.
+    -->
+    <header class="bg-white shadow-sm py-4">
+        <div class="container flex justify-between items-center">
+            <!-- Site Logo or Title -->
+            <h1 class="text-2xl font-bold text-gray-900">
+                <a href="#" class="hover:text-indigo-600 transition-colors">Project Website</a>
+            </h1>
+            
+            <!-- 
+              Navigation Bar: Contains links to other pages.
+              This is a placeholder for your functional navigation system.
+            -->
+            <nav>
+                <ul class="flex space-x-6 font-medium">
+                    <li><a href="#" class="hover:text-indigo-600 transition-colors">Home</a></li>
+                    <li><a href="#" class="hover:text-indigo-600 transition-colors">About Us</a></li>
+                    <li><a href="#" class="hover:text-indigo-600 transition-colors">Services</a></li>
+                    <li><a href="#" class="hover:text-indigo-600 transition-colors">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 
+      Main Content Area: This is where the primary, unique content 
+      of the page resides. This can be a hero section, articles, etc.
+    -->
+    <main class="container py-8">
+        <!-- Hero Section: A prominent section to grab the user's attention. -->
+        <section class="text-center py-16 card mb-8">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-4">
+                Welcome to Our Digital Space
+            </h2>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
+                This is the foundational HTML structure for your website. You can replace this content with information about your chosen organization.
+            </p>
+            <a href="#" class="bg-indigo-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-indigo-700 transition-colors">Learn More</a>
+        </section>
+
+        <!-- A section to display key information or services. -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Content Card 1 -->
+            <div class="card">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">Mission Statement</h3>
+                <p class="text-gray-600">
+                    Our mission is to provide high-quality services and information, fostering a community built on trust and innovation. We are committed to excellence in all our endeavors.
+                </p>
+            </div>
+            
+            <!-- Content Card 2 -->
+            <div class="card">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">Our Vision</h3>
+                <p class="text-gray-600">
+                    We envision a future where technology empowers everyone. We strive t
